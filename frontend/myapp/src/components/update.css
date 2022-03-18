@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Merienda+One&family=Ole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lato&family=Merienda+One&family=Ole&display=swap');
+
+* {
+    font-size: 16px;
+}
+
+:root{
+    --main-font:'Bungee Inline', cursive;
+    --other-font:'Lato', sans-serif;
+}
+
+.updateHeader{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0em;
+    border-bottom: 1px solid rgb(175, 170, 170);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuHeading{
+    margin-left: 8em;
+}
+
+.updateBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 65vh;
+    border: 0.5px solid rgb(197, 194, 194);
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius:20px;
+    margin-top:4em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+}
+
+.updateLabels{
+    font-size: 2.6rem;
+    color:rgba(34, 33, 32, 0.576);
+    font-family:var(--other-font)
+}
+
+#updateButton{
+    height: 3em;
+     width:10em;
+     background-color: rgba(245, 245, 239, 0);
+     font-family: var(--other-font);
+     font-size: 1rem;
+     border-color: rgb(18, 18, 19);
+     margin-top: 4em;
+     margin-left: 4em;
+}
+
+
+#updateSideBox{
+    height:100vh;
+    display:block;
+    border-right: 0.5px solid rgb(196, 189, 189);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width:600px) {
+    #updateSideBox{
+        height:50vh;
+    }
+
+    .updateBox{
+        width:100%;
+        margin-top: 2em;
+        height:100vh;
+        margin-left: 0;
+      }
+  
+      .updateLabels{
+          font-size: 2em;
+          font-weight: bold;
+      }
+
+      #depositButton {
+          height: 4em;
+          width: 12em;
+          font-weight: bold;
+      }
+
+      .form-control{
+        width:11em;
+        margin-bottom: 1em;
+    }
+
+    #butBox{
+        margin-left: 2em;
+    }
+
+    #updateButton{
+        height: 4em;
+        width: 11em;
+    }
+
+    .ox{
+        margin-right: 2em;
+    }
+}

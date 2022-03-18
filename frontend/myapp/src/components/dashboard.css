@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Merienda+One&family=Ole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lato&family=Merienda+One&family=Ole&display=swap');
+
+* {
+    font-size: 16px;
+}
+
+:root{
+    --main-font:'Bungee Inline', cursive;
+    --other-font:'Lato', sans-serif;
+}
+
+#headerContain{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0em;
+    border-bottom: 1px solid rgb(175, 170, 170);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#dashboardHeader{
+    font-size: 2.5rem ;
+    font-family: var(--main-font);
+    color:rgb(46, 36, 36);
+}
+
+#dhRight{
+    font-size: 1.5rem;
+    font-family: var(--other-font);
+
+}
+
+.menuIcon{
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.headerRight{
+    margin-right: 1em;
+}
+
+.walletBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 55vh;
+    border: 0.5px solid rgb(197, 194, 194);
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius:20px;
+    margin-top:4em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+}
+
+#walletBalance{
+    font-size: 3rem;
+    font-family:var(--other-font);
+    font-weight:bold;
+    color:rgba(37, 36, 34, 0.576);
+    margin-bottom:1em;
+}
+
+#bal{
+    font-size: 3rem;
+    font-family:var(--other-font);
+    font-weight:bold;
+    color:rgba(37, 36, 34, 0.576);
+}
+
+#amountBalance{
+    margin-right:2em;
+}
+
+.w{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.transactions{
+    font-size: 1.5rem;
+    font-family:var(--other-font);
+    font-weight:bold;
+    color:rgba(15, 15, 14, 0.576);
+}
+
+.tBox{
+    margin-left: 2.5em;
+    margin-bottom: 2em;
+}
+
+#sideBox{
+    display:block;
+    border-right: 0.5px solid rgb(196, 189, 189);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.noTransactions{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 0;
+
+}
+
+#tranText{
+    font-size:1.3rem;
+    font-family:var(--other-font);
+    color:black
+}
+
+.dangerBox{
+    margin-bottom: 0;
+}
+
+#sideHide{
+    display:none
+}
+
+@media  screen and (max-width:600px){
+    
+    #dhRight {
+        display: none;
+    }
+
+    #dashboardHeader {
+        font-size:1.5em;
+    }
+
+    #col {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .walletBox{
+        width: 100%;
+        height: 50vh;
+        margin-right: 3em;
+        margin-bottom: 2em;
+    }
+
+    #sideHide{
+        height: 50vh;
+    }
+
+    .table{
+        margin-left: 16em;
+    }
+
+    .tBox {
+        margin-left: 16em;
+        margin-bottom: 1em;
+    }
+
+    @media  screen and (max-width:380px){
+        #headerContain{
+            width:100%
+        }
+    }
+}
+

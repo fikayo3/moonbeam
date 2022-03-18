@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Merienda+One&family=Ole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lato&family=Merienda+One&family=Ole&display=swap');
+
+* {
+    font-size: 16px;
+}
+
+:root{
+    --main-font:'Bungee Inline', cursive;
+    --other-font:'Lato', sans-serif;
+}
+
+#headerDep{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0em;
+    border-bottom: 1px solid rgb(175, 170, 170);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuHeading{
+    margin-left: 8em;
+}
+
+.depositLabels{
+    font-size: 3rem;
+    color:rgba(34, 33, 32, 0.576);
+    font-family:var(--other-font)
+}
+
+.labelBox{
+    margin-bottom: 2em;
+}
+
+#butBox{
+    margin-left: 3em;
+}
+
+.depositBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 60vh;
+    border: 0.5px solid rgb(197, 194, 194);
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius:20px;
+    margin-top:4em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+}
+
+#depositButton{
+    height: 3em;
+     width:10em;
+     background-color: rgba(245, 245, 239, 0);
+     font-family: var(--other-font);
+     font-size: 1rem;
+     border-color: rgb(18, 18, 19);
+     margin-top: 4em;
+     margin-right: 2em;
+}
+
+#depositSideBox{
+    display:block;
+    height:100vh;
+    border-right: 0.5px solid rgb(196, 189, 189);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#depositButton:hover{
+    border-color: rgb(124, 9, 9);
+}
+
+#alertBox{
+    width: 30em;
+    height:15em;
+    border-radius: 5px;
+    border:0.3px solid rgb(199, 193, 193);
+    position:absolute;
+    top:0;
+    right:0;
+    display: flex;
+    background-color: rgba(172, 168, 168, 0.885);
+    align-items: center;
+    justify-content: center;
+}
+
+#x{
+    height:1.7em;
+    width:1.5em;
+    position: absolute;
+    background-color: rgba(156, 150, 150, 0.885) ;
+    top:0;
+    right:0;
+}
+
+#alert{
+    font-size: 1.5em;
+    font-family: var(--other-font);
+    color: rgb(19, 18, 18);
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    visibility:visible;
+}
+
+@media screen and (max-width:600px) {               
+    #depositSideBox{
+        height:50vh;
+    }
+
+    .depositBox{
+      width:100%;
+      margin-top: 2em;
+      height:100vh;
+      margin-left: 0;
+    }
+
+    .depositLabels{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    #depositButton {
+        height: 4em;
+        width: 12em;
+        font-weight: bold;
+    }
+
+    .form-control{
+        width:11em;
+    }
+
+    #butBox{
+        margin-left: 2em;
+    }
+
+    #alertBox{
+        width:20em;
+    }
+
+    #x {
+        height: 2em;
+        width: 2em;
+    }
+
+    #alert {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+}

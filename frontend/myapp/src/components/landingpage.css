@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Merienda+One&family=Ole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lato&family=Merienda+One&family=Ole&display=swap');
+
+:root {
+    --main-font:'Bungee Inline', cursive;
+    --other-font:'Lato', sans-serif;
+    }
+
+ * {
+    font-size: 16px;
+}
+
+ .icontainer{
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    background: linear-gradient(to right, #243B55, #141E30); 
+    background-size: cover;
+     display:flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin-top: 9em;
+     margin: 0px;
+     color:rgb(223, 213, 213);
+     height:100vh
+ }
+
+ #mainHeading{
+     font-family: var(--main-font);
+     font-size: 6rem;
+     color:rgb(78, 76, 76);
+ }
+
+ #otherText{
+     font-family: var(--other-font);
+     font-size: 2rem;
+ }
+
+ .buttons{
+     display:flex;
+     flex-direction: row;
+ }
+
+ .buton{
+     height: 4em;
+     width:10em;
+     background-color: rgba(245, 245, 239, 0);
+     font-family: var(--other-font);
+     font-size: 1rem;
+     border-color: rgb(18, 18, 19);
+     margin-top: 4em;
+     margin-right: 4em;
+ }
+
+ .buton:hover{
+    border-color: rgb(124, 9, 9);
+ }
+
+ @media  screen and (max-width:600px){
+     .icontainer{
+         width:100%;
+         height: 100vh;
+         background-size: cover;
+     }
+
+     #mainHeading{
+         margin-left:1em;
+         font-size:3.1rem;
+     }
+
+     #otherText{
+         font-size: 1.5rem;
+         margin-left:1em;
+         margin-top:2.4em;
+     }
+
+     #moonImg{
+         display:none;
+     }
+     
+     .buttons{
+         margin-left: 5em;
+         margin-top: 2em;
+         flex-direction: column;
+     }
+
+     .buton{
+        height: 6em;
+        width: 12em;
+        font-size: 1.3rem;
+     }
+ }
+
+ @media screen and (max-width:390px){
+    #mainHeading{
+        margin-left:1em;
+        font-size:3rem;
+    }
+ }
+
+ @media screen and (max-width:360px){
+    #otherText{
+        margin-left:2em;
+        font-size:1.4rem;
+    }
+ }
